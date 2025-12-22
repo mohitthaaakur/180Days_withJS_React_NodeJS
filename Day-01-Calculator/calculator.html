@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+  <div class="calculator">
+  <p class="title-calculator"> <b>Calculator</b></p>
+  <p>
+  <button onclick="calculatioN += '1';
+  console.log(calculatioN);" class="numpad">
+    1</button>
+  <button onclick="calculatioN += '2';
+  console.log(calculatioN);" class="numpad">
+    2</button>
+  <button onclick="calculatioN += '3';
+  console.log(calculatioN);" class="numpad">
+    3</button>
+  <button onclick="calculatioN += ' + ';
+  console.log(calculatioN);" class="numpad-operator">
+    +</button>
+  </p>
+  <p>
+    <button onclick="calculatioN += '4';
+    console.log(calculatioN);" class="numpad">
+      4</button>
+    <button onclick="calculatioN += '5';
+    console.log(calculatioN);" class="numpad">
+      5</button>
+    <button onclick="calculatioN += '6';
+    console.log(calculatioN);" class="numpad">
+      6</button>
+    <button onclick="calculatioN += ' - ';
+    console.log(calculatioN);" class="numpad-operator">
+      -</button>
+    </p>
+    <p>
+      <button onclick="calculatioN += '7';
+      console.log(calculatioN);" class="numpad">
+        7</button>
+      <button onclick="calculatioN += '8';
+      console.log(calculatioN);" class="numpad">
+        8</button>
+      <button onclick="calculatioN += '9';
+      console.log(calculatioN);" class="numpad">
+        9</button> 
+      <button onclick="calculatioN += ' * ';
+      console.log(calculatioN);" class="numpad-operator">
+        *</button>
+      </p>
+      <p>
+        <button onclick="calculatioN += '0';
+        console.log(calculatioN);" class="numpad">
+          0</button>
+        <button onclick="calculatioN += '.';
+        console.log(calculatioN);" class="numpad">
+          .</button>
+          <button onclick="eval(calculatioN);
+          calculatioN = eval(calculatioN);
+          console.log(calculatioN)" class="numpad">
+            =</button>
+        <button onclick="calculatioN += ' / ';
+        console.log(calculatioN);" class="numpad-operator">
+          /</button>
+        </p>
+        <button onclick="calculatioN = '';
+        console.log(`Cleared.`);" class="numpad-clear">
+          Clear
+        </button>
+      </div>
+  <script>
+    let calculatioN ='';
+  </script>
+</body>
+</html>
