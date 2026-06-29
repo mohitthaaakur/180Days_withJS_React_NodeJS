@@ -1,2 +1,2 @@
-# 100Days_withJS
-100 days of JavaScript - daily projects, learning. and progress. 
+# 180Days_withJS_React_NodeJS
+180 days of JavaScript,React,Node JS - daily projects, learning. and progress. 
