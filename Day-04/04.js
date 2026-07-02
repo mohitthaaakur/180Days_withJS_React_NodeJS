@@ -11,12 +11,34 @@ alert(Math.round(6.35 * 10) / 10);
 function readNumber (){
   let num;
   do{
-    num = Number(prompt('enter a value'))
-  } while (Number.isNaN(num));
-  if (Number.isFinite(num)){
-    return num;
+    num = prompt('enter a number', '')
+  } while (!isFinite(num));
+  if (num === null || num === '') {
+    return null
   } else {
-    return null;
+    return +num
   }
 }
-alert(readNumber());
+alert(`Read ${readNumber()}`);
+// An occasional infinite loop
+// let i = 0;
+// while (i != 10) {
+//   i += 0.2;
+// }
+let i = 0;
+while(i < 11){
+  i += 0.2;
+  if(i > 9.8 && i < 10.2){
+    alert(i);
+  }
+} // i != 10 because, i will never become 10 when adding fraction like 0.2 here, such precision loss happens while adding decimal numbers
+// A random number from Min to Max
+function random(min, max){
+  return min + Math.random() * (max - min);
+}
+alert(random(1,5));
+function randomInteger(min, max){
+  let int = min + Math.random() * (max + 1 - min);
+  return Math.floor(int);
+}
+alert(randomInteger(1, 5));      
