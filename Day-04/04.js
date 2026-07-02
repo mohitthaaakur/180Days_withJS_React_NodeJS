@@ -31,7 +31,7 @@ while(i < 11){
   if(i > 9.8 && i < 10.2){
     alert(i);
   }
-} // i != 10 because, i will never become 10 when adding fraction like 0.2 here, such precision loss happens while adding decimal numbers
+} // i != 10 because, i will never become 10 when adding decimal like 0.2 here, such precision loss happens while adding decimal numbers
 // A random number from Min to Max
 function random(min, max){
   return min + Math.random() * (max - min);
