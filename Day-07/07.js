@@ -44,3 +44,10 @@ function truncateWord(line, maxlength){
   }
 }
   alert(truncateWord('this is the line to be truncated by the function above', 15));
+// Price extractor
+        function priceExtractor(){
+          let enteredPrice = prompt('enter the price') 
+          let totalPrice = +enteredPrice.substring(1) * 3;
+          return totalPrice;
+        };        
+        alert(priceExtractor());  
