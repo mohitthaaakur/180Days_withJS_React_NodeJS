@@ -1,4 +1,4 @@
-# Day 07 - Arrays
+# Day 09 - Arrays
 
 ## Topics Covered
 
