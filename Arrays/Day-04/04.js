@@ -37,6 +37,28 @@ let users = [
 let user = users.find(item => item.id === 1);
 console.log(user.name)
 console.log(users.findIndex(user => user.name === 'john'));
-console.log(users.findIndexOf(user => user.name === 'john'));
+console.log(users.findLastIndex(user => user.name === 'john'));
 let johnUser = users.filter(user => user.name === 'john');
 console.log(johnUser);
+let products = [
+  {name: 'Laptop', price: 50000},
+  {name: 'Phone', price: 40000},
+  {name: 'Watch', price: 30000},
+  {name: 'Laptop', price: 35442},
+]
+console.log(products.find(product => product.price > 34999 )); // only returns the first matching value
+console.log(products.findIndex(product => product.name === 'Phone'));
+console.log(products.filter(product => product.price > 34999)); // returns all matching values
+console.log(products.findLastIndex(product => product.name === 'Laptop'));
+let students = [
+  {name: 'amy', pass: true},
+  {name: 'ravi', pass: false},
+  {name: 'sam', pass: true},
+];
+function isPass(array){
+let passStudents = array.filter(ispass => ispass.pass === true);
+passStudents.forEach(item => {
+  console.log(item.name);
+});
+}
+isPass(students);
