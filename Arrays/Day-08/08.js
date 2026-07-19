@@ -7,5 +7,5 @@ arr.fill(9, 1, 4);
 console.log(arr);
 // reduceRight
 let letters = ['a', 'b', 'c',];
-let str = letters.reduceRight((current, str) => str += current);
+let str = letters.reduceRight((str, current) => str += current);
 console.log(str);
